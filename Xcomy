@@ -13672,16 +13672,16 @@ if not _G.DNAFarmActive then return end
         local Menu = workspace.GameEvents.GoToMenu
         workspace.GameEvents.ChangeDinosaur:FireServer(YoungAdult)
         Menu:FireServer(CountDown)
-        wait(2.5)
+        wait(1)
         workspace.GameEvents.StartPlayer:FireServer()
         workspace.GameEvents.ChangeDinosaur:FireServer(Baby)
-        wait(3)
+        wait(1)
         workspace.GameEvents.ChangeDinosaur:FireServer(Baby)
         workspace.GameEvents.StartPlayer:FireServer()
     end
-    wait(3)
+    wait(1)
     if game.Players.LocalPlayer.Character then
-        wait(3)
+        wait(1)
     end
     if game.Players.LocalPlayer.Character then
         workspace.GameEvents.GoToMenu:FireServer(7)
